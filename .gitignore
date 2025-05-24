@@ -17,3 +17,6 @@ server/*.local
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+
+# Local environment files
+.env
