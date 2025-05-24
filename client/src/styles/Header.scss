@@ -1,0 +1,102 @@
+@use "./_variables.scss" as *;
+
+.bandeau {
+  background-color: $secondary-color;
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.navbar {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 1rem 2rem;
+  color: $secondary-color;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+
+  &__logo {
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__logo-image {
+    height: 5rem;
+    width: auto;
+    margin-right: 1rem;
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex: 1;
+
+    li {
+      position: relative;
+
+      a {
+        color: $secondary-color;
+        text-decoration: none;
+        padding: 0.5rem;
+        transition: background 0.3s;
+
+        &:hover {
+          color: $navbar-hover-color;
+        }
+      }
+    }
+  }
+
+  &__dropdown {
+    .dropdown__menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $primary-color;
+      list-style: none;
+      padding: 0.5rem 0;
+      margin: 0;
+      margin-top: 0.5rem;
+      display: block;
+      min-width: 150px;
+      border-bottom-left-radius: 0.75rem;
+      border-bottom-right-radius: 0.75rem;
+
+      li {
+        a {
+          display: block;
+          padding: 0.5rem 1rem;
+          white-space: nowrap;
+
+          &:hover {
+            color: $navbar-hover-color;
+          }
+        }
+      }
+    }
+  }
+
+  &__contact {
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+      padding: 0.5rem;
+      transition: background 0.3s;
+
+      &:hover {
+        color: $navbar-hover-color;
+      }
+    }
+  }
+}
