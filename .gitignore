@@ -9,6 +9,11 @@ client/dist
 client/dist-ssr
 client/*.local
 
+server/node_modules
+server/dist
+server/dist-ssr
+server/*.local
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
